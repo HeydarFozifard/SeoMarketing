@@ -1,0 +1,19 @@
+.content_hidden_portfolio {
+    padding: 60px 20px;
+    background: linear-gradient(105deg, rgba(255, 77, 30, 1) 0%, rgba(255, 44, 109, 1) 100%);
+    border-radius: 30px;
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    transition: all .5s ;
+    @include responsive ("tablet") {
+    z-index: 3;
+       
+    }
+    @include responsive ("land-phone") {
+    padding: 70px 40px;
+       
+    }
+}

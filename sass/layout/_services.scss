@@ -1,0 +1,38 @@
+.services{
+    width: 100%;
+    padding: 0 100px;
+    margin-top: 100px;
+    @include responsive ("tablet") {
+        padding: 0 50px;
+   
+      }
+}
+.container_services{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img_services{
+    flex-basis: 55%;
+    @include responsive ("tablet") {
+      flex-basis: 100%;
+      order: 2;
+      margin-top: 50px;
+    }
+    img{
+        width: 100%;
+    }
+}
+.about_services{
+    flex-basis: 45%;
+    @include responsive ("tablet") {
+        margin-top: 100px;
+        flex-basis: 100%;
+        order: 1;
+      }
+}
+
+.heading_services{
+    padding-right: 50px;
+    margin-bottom: 30px;
+}

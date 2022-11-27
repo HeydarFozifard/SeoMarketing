@@ -1,0 +1,125 @@
+.nav_responsive {
+    display: none;
+
+    width: 100%;
+    position: absolute;
+
+    @include responsive ("land-phone") {
+        display: none;
+
+        ul {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            background-color: $color_bg_responsive--menu;
+            top: 74px;
+            right: 160px;
+            opacity: 0;
+        }
+
+        li {
+            border: 1px $color_date solid;
+
+            display: block;
+            padding: 15px 40px;
+
+            a {
+                display: block;
+            }
+
+
+        }
+
+    }
+
+
+}
+
+
+.btn_hamberger:checked~.nav_responsive {
+    @include responsive ("land-phone") {
+
+        display: block;
+    }
+
+
+}
+.btn_hamberger:checked~.nav_responsive ul {
+    @include responsive ("land-phone") {
+            opacity: 1;
+    }
+
+
+}
+
+.btn_hamberger:checked~.menu_hamberger .line_1 {
+
+    transform: translateY(8px) translateX(1px) rotate(45deg);
+
+    width: 80%;
+
+}
+
+.btn_hamberger:checked~.menu_hamberger .line_2 {
+
+    opacity: 0;
+
+
+}
+
+.btn_hamberger:checked~.menu_hamberger .line_3 {
+    transform: translateY(-6px) translateX(1px) rotate(-45deg);
+
+
+    width: 80%;
+
+}
+
+
+.menu_hamberger {
+    @include responsive ("land-phone") {
+        width: 40px;
+        position: absolute;
+        right: 40px;
+        top: 20px;
+        z-index: 41;
+
+    }
+
+    @include responsive ("phone") {
+
+        right: 0px;
+
+
+    }
+
+    .menu {
+        cursor: pointer;
+
+    }
+
+}
+
+
+
+.line_1,
+.line_3 {
+    width: 60%;
+    height: 2px;
+    background-color: $color_item_menu;
+
+    margin-bottom: 5px;
+    transition: all ease .4s;
+
+
+}
+
+.line_2 {
+    width: 80%;
+    height: 2px;
+    background-color: $color_item_menu;
+    margin-bottom: 5px;
+    transition: all ease .4s;
+
+}

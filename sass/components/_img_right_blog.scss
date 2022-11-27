@@ -1,0 +1,27 @@
+.img_content {
+    width: 100%;
+
+    img {
+        width: 75%;
+        border-radius: 30px;
+        margin: -5px 0 30px 75px;
+
+        @include responsive ("tablet") {
+            width: 65%;
+            margin: -5px 0 30px 150px;
+
+        }
+
+        @include responsive ("land-phone") {
+            width: 80%;
+            margin:-5px 0 30px 60px ;
+
+        }
+        @include responsive ("phone") {
+            width: 100%;
+            margin:-5px 0 30px 0px ;
+
+        }
+
+    }
+}

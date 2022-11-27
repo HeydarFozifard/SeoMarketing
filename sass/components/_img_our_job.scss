@@ -1,0 +1,13 @@
+
+.img_our_job {
+    margin-top: 5%;
+    flex-basis: 50%;
+    @include responsive ("small_desktop") {
+        flex-basis: 75%;
+        margin: 0 auto;
+    }
+    img{
+        width: 100%;
+        
+    }
+}

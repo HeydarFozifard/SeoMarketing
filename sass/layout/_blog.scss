@@ -1,0 +1,68 @@
+.blog {
+    width: 100%;
+    padding: 0 100px;
+    margin: 200px 0;
+    background-image: url(../images/blog-dec.png);
+    background-repeat: no-repeat;
+    background-position: 91% 0;
+
+    @include responsive ("small_desktop") {
+        background-image: none;
+
+    }
+
+    @include responsive ("tablet") {
+        padding: 0 60px;
+
+
+    }
+    @include responsive ("phone") {
+
+        padding: 0 10px;
+    }
+}
+
+.header_blog {
+    position: relative;
+    top: 100px;
+    margin-bottom: 30px;
+    padding-right: 65%;
+
+    @include responsive ("small_desktop") {
+        padding-right: 10%;
+        text-align: center;
+        margin-bottom: 50px;
+
+    }
+    @include responsive ("land-phone") {
+        padding-right: 0%;
+
+    }
+    
+}
+
+.blog_contaienr {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left_list {
+    @include responsive ("tablet") {
+        flex-basis: 100%;
+        margin-bottom: 100px;
+    }
+
+    margin-top: 80px;
+
+    flex-basis: 50%;
+}
+
+.right_list {
+    @include responsive ("tablet") {
+        flex-basis: 100%;
+    }
+
+    margin-top:80px;
+    flex-basis: 50%;
+
+}

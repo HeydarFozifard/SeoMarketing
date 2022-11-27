@@ -1,0 +1,40 @@
+.form_contact_us {
+    flex-basis: 50%;
+    background-color: $color_bg_topmenu;
+    padding: 50px 20px;
+    border-radius: 30px;
+    @include responsive ("tablet") {
+        flex-basis: 66%;
+        margin:0 auto;
+    }
+}
+
+.full_name {
+    display: flex;
+
+    input[type="text"] {
+        flex-basis: 50%;
+        padding: 10px 20px;
+        margin: 10px 5px;
+        background-color: $color_bg_form;
+        border-radius: 30px;
+    }
+
+}
+
+input[type="email"] {
+    width: 98%;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background-color: $color_bg_form;
+    border-radius: 30px;
+}
+
+textarea {
+    width: 98%;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background-color: $color_bg_form;
+    border-radius: 30px;
+}
+

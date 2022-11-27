@@ -1,0 +1,29 @@
+.list_top_menu {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include responsive ("land-phone") {
+        display: none;
+
+    }
+
+}
+
+nav ul li {
+    padding: 0 10px;
+    @include responsive ("tablet") {
+        padding: 0 3px;
+    }
+}
+
+nav ul li a:hover {
+
+    color: $color_title_top_menu_span_1;
+    transition: all .3s ease 0s;
+
+}
+
+.different_color {
+    color: $color_title_top_menu_span_1;
+}

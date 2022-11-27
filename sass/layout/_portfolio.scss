@@ -1,0 +1,49 @@
+.portfolio {
+    width: 100%;
+    padding: 0 100px;
+    @include responsive ("phone") {
+        padding: 30px;
+    }
+}
+
+.container_card_portfolio {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card_portfolio {
+    flex-basis: 23%;
+    margin: 0 10px;
+    position: relative;
+
+    @include responsive ("small_desktop") {
+        flex-basis: 20%;
+        margin: 0 22px;
+    }
+    @include responsive ("tablet") {
+        flex-basis: 45%;
+        margin: 0 10px;
+        margin-bottom: 40px;
+    }
+    @include responsive ("land-phone") {
+        flex-basis:100%;
+        margin-bottom: 60px;
+    }
+   
+    
+
+    &:hover .content_hidden_portfolio {
+        top: -100px;
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    &:hover .content_show_portfolio {
+        top: 100px;
+
+    }
+}
+

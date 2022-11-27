@@ -1,0 +1,25 @@
+* {
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box ;
+}
+body{
+    font-size: 15px;
+    font-family: $main_font;
+}
+input,
+button,
+textarea {
+    outline: none !important;
+    background-color: transparent;
+    border: none;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+a {
+    text-decoration: none !important;
+}

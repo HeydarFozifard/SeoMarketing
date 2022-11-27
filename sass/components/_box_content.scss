@@ -1,0 +1,19 @@
+.box_content{
+    display: flex;
+    @include responsive ("land-phone") {
+        flex-wrap: wrap;
+
+    }
+}
+.date_content{
+    display: flex;
+
+}
+.container_box_content{
+    margin: 20px 0 0 40px;
+    line-height: 2;
+    @include responsive ("land-phone") {
+      margin: 0 auto;
+
+    }
+}

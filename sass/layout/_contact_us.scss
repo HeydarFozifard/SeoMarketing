@@ -1,0 +1,63 @@
+.contact_us {
+    padding: 160px 50px;
+    background-image: url(../images/contact-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @include responsive ("tablet") {
+        padding:160px 0px;
+    }
+}
+
+.container_contact_us {
+    display: flex;
+    align-items: center;
+
+    @include responsive ("tablet") {
+        flex-wrap: wrap;
+
+    }
+}
+
+.about_contact_us {
+    flex-basis: 50%;
+
+    @include responsive ("tablet") {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+.des_contact_us ,.heading_contact_us{
+    @include responsive ("small_desktop") {
+        padding:0 20px;
+    }
+    @include responsive ("tablet") {
+        padding:0 100px;
+    }
+    @include responsive ("phone") {
+        padding:0 11px;
+    }
+
+
+    padding-right: 200px;
+
+}
+
+
+
+
+
+.Phone_info {
+    margin: 0 10px;
+
+    i {
+        margin: 0 30px;
+        background-color: $color_bg_topmenu;
+        color: $color_title_top_menu_span_1;
+        border-radius: 50%;
+        padding: 10px 12px;
+    }
+}

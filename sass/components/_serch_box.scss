@@ -1,0 +1,29 @@
+.search_box{
+    margin: 30px 0 50px 0;
+   
+    form{
+    position: relative;
+        z-index: 3;
+    }
+}
+.search_box input[type="text"]{
+    background-color:$color_title_top_menu_span_2;
+    border-radius: 33px;
+    min-width: 100%;
+    
+    padding:25px 0px 25px 30px;
+    &::placeholder{
+        color: $color_btn_top_menu;
+    }
+}
+.search_box button[type="submit"]{
+    position: absolute;
+    top: 10px;
+    right:10px;
+    width:30%;
+    padding: 15px 0;
+    border-radius: 23px;
+    background-color: $color_btn_top_menu;
+    color:$color_title_top_menu_span_1 ;
+    cursor: pointer;
+}

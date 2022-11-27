@@ -1,0 +1,16 @@
+.des_portfolio{
+    width: 100%;
+    text-align: center;
+    padding: 0 34%;
+    margin:  150px 0;
+    @include responsive ("small_desktop") {
+    padding: 0 20%;
+       
+    }
+    
+    @include responsive ("land-phone") {
+        padding: 0 0%;
+    margin:  130px 0;
+       
+    }
+}

@@ -1,0 +1,50 @@
+.item_about_us {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    margin-left: auto;
+
+    @include responsive ("tablet") {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+
+}
+
+.box_item {
+    margin-top: 17%;
+    width: 50%;
+    display: flex;
+    padding-right: 20px;
+
+    @include responsive ("tablet") {
+        border-radius: 30px;
+        background: linear-gradient(105deg, rgba(255, 77, 30, 1) 0%, rgba(255, 44, 109, 1) 100%);
+        width: 43%;
+        margin-top: 6%;
+        margin-bottom: 10%;
+        padding: 30px 0 30px 20px;
+        margin-right: 40px;
+    }
+
+    @include responsive ("land-phone") {
+
+        width: 80%;
+        margin-top: 6%;
+        margin-bottom: 0%;
+        padding: 30px 20px 30px 20px;
+
+    }
+
+    @include responsive ("phone") {
+
+        width: 100%;
+        margin-top: 6%;
+
+    }
+
+    span {
+        margin-right: 20px;
+    }
+}

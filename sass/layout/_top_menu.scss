@@ -1,0 +1,32 @@
+.top_menu {
+    width: 100%;
+    background-color: $color_bg_topmenu;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    align-items: center;
+    padding: 30px 100px;
+
+    @include responsive ("small_desktop") {
+        padding: 30px 20px;
+
+    }
+
+    @include responsive ("tablet") {
+        padding: 30px 50px;
+
+    }
+
+
+}
+
+.container_menu {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.title_top_menu {
+    flex-basis: 25%;
+}

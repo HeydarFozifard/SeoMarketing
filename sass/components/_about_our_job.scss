@@ -1,0 +1,15 @@
+.about_our_job{
+    flex-basis: 50%;
+    padding-right: 3%;
+    line-height: 2;
+    margin: 8% 0% 0 6%;
+    @include responsive ("small_desktop") {
+        flex-basis: 100%;
+    }
+    @include responsive ("land-phone") {
+
+    }
+}
+.des_our_job{
+    margin: 30px 0;
+}

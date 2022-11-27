@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+    &::before {
+        content: "";
+        background: url(/images/baner-dec-right.png) no-repeat;
+        background-position: 10px 20px;
+        width: 100px;
+        height: 400px;
+        position: absolute;
+        right: 0;
+        top: -20px;
+    }
+    &::after {
+        content: "";
+        background: url(/images/baner-dec-left.png) no-repeat;
+        background-position: 10px 20px;
+        width: 475px;
+        height: 500px;
+        position: absolute;
+        left: -10px;
+        top: -20px;
+    }
+}
+
+
+
+.header_container {
+    display: flex;
+    padding: 50px 100px;
+    
+    @include responsive ("small_desktop") {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    @include responsive ("land-phone") {
+        padding: 50px 20px;
+
+    }
+   
+}

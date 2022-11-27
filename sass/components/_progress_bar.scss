@@ -1,0 +1,59 @@
+.container_progress_bar {
+    display: inline-block;
+    position: relative;
+    border-radius: 50px;
+    width: 95%;
+    height: 7px;
+    background-color: $color_progress_bar;
+}
+
+.progress_bar {
+    display: inline-block;
+    width: 80%;
+    height: 7px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 50px;
+
+}
+//  cod_color_progress_bar
+.pro_1 {
+    width: 84%;
+    background-color: $color_title_top_menu_span_1;
+
+
+}
+
+.pro_2 {
+    width: 88%;
+    background-color: $color_title_top_menu_span_1;
+
+
+}
+
+.pro_3 {
+    width: 94%;
+    background-color: $color_title_top_menu_span_1;
+
+}
+
+
+// cod for info
+.info_progress {
+    display: flex;
+    align-items: center;
+    justify-items: baseline;
+}
+
+.persent-1 {
+    position: relative;
+    left: 50%;
+}
+
+.persent-2,
+.persent-3 {
+    position: relative;
+    left: 60%;
+}

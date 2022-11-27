@@ -1,0 +1,68 @@
+.about_us {
+    width: 100%;
+    height: 700px ;
+    margin-bottom: 200px;
+    background-image: url(../images/about-bg.png);
+    background-size: cover;
+    @include responsive ("tablet") {
+        background-image: none;
+
+    }
+
+    @include responsive ("land-phone") {
+        background-image: none;
+        margin-bottom: 300px;
+
+    }
+}
+
+
+.container_about_us {
+    width: 100%;
+    height: 1000px;
+    background-image: url(../images/about-left-image.png);
+    background-repeat: no-repeat;
+    background-position:100px 100px;
+    background-size:30%;
+    @include responsive ("tablet") {
+      
+    background-position:100% 70%;
+    }
+    @include responsive ("land-phone") {
+    background-position:100% 88%;
+    background-size:40%;
+     
+
+    }
+    @include responsive ("phone") {
+        background-position:60% 99%;
+        background-size:50%;
+         
+    
+        }
+
+}
+
+// .img_about_us--woman {
+//     flex-basis: 40%;
+//     position: relative;
+
+//     @include responsive ("tablet") {
+//         flex-basis: 100%;
+//     }
+
+//     img {
+//         position: absolute;
+//         right: 15%;
+//         width: 60%;
+
+//         @include responsive ("tablet") {
+//             width: 30%;
+//             right: 5%;
+//             margin-top: 70%;
+
+//         }
+      
+
+//     }
+// }

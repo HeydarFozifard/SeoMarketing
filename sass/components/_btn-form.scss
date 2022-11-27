@@ -1,0 +1,11 @@
+.btn_form {
+    margin: 10px 5px;
+    padding: 13px 20px;
+    background-color: $color_title_top_menu_span_2;
+    border-radius: 30px;
+    cursor: pointer;
+    &:hover{
+    background-color: $color_title_top_menu_span_1;
+    transition: all .4s ease;
+    }
+}
